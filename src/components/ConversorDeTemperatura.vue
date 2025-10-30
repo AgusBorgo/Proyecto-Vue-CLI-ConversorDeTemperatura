@@ -1,7 +1,19 @@
 <template>
-  <div class="container">
-    <h1>{{ title }}</h1>
-    <!-- Acá va tu UI: formularios, tablas, botones, etc. -->
+  <div class="container mt-4">
+    <h2>{{ title }}</h2>
+    <br>
+    <div class="form-group">
+        <label for="celcius"> Temperatura en Celcius</label>
+        <input type="number"
+        id="celsius"
+        class="form-control"
+        v.model.number="celsius"
+        placeholder="Ingresar temperatura">
+    </div>
+    <br>
+    <div class="class mt-4">
+        <p>Temperatura en Fahrenheit</p>
+    </div>
   </div>
 </template>
 
@@ -9,11 +21,10 @@
 export default {
   name: 'MiComponente',
   props: {
-    // Props si necesitás recibir datos desde el padre
   },
   data() {
     return {
-      title: 'Hola Vue!',
+      title: 'Conversor de temperatura',
       // Variables reactivas
     };
   },
