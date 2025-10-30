@@ -25,16 +25,16 @@ import { ref } from 'vue'
 
 const respuestas = ref([
   {
-    pregunta: 'Ask',
-    elegida: 'Answer',
+    pregunta: 'Como es la forma reducida de v-on:click? ',
+    elegida: 'c) @click',
   },
   {
-    pregunta: 'Ask',
-    elegida: 'Answer',
+    pregunta: 'El modificador trim recorta... ',
+    elegida: 'c) Los espacios adelante y atrás en una entrada de texto',
   },
   {
-    pregunta: 'Ask',
-    elegida: 'Answer',
+    pregunta: 'La propiedad routes en la definición del router de Vue.js tiene como función: ',
+    elegida: 'a) Definir el path y el componente activo para esa ruta',
   }
 ])
 
